@@ -1,0 +1,56 @@
+<div class="input-form">
+    <label for="name">
+        Name
+    </label>
+    <input 
+    id="name"
+    name="name"
+    type="text"
+    [(ngModel)]="name"/>
+    <label for="age">
+        Age
+    </label>
+    <input 
+    id="age"
+    name="age"
+    type="number"
+    placeholder="21"
+    [(ngModel)]="age">
+    <label for="profilePicUrl">
+        Profile Pic Url
+    </label>
+    <input 
+    id="profilePicUrl"
+    name="profilePicUrl"
+    type="text"
+    placeholder="https://someImage.png"
+    [(ngModel)]="profilePicUrl"/>
+    <label for="bio">
+        Bio
+    </label>
+    <textarea 
+    id="bio"
+    name="bio"
+    type="text"
+    placeholder="my name Ian, I love pizza and running"
+    [(ngModel)]="bio"></textarea>
+    <label for="birthday">
+        Birthday
+    </label>
+    <input 
+    id="birthday"
+    name="birthday"
+    type="text"
+    placeholder="i.e. May 5"
+    [(ngModel)]="birthday">
+    <label for="intrests">
+        Intrests
+    </label>
+    <input 
+    id="intrests"
+    name="intrests"
+    type="text"
+    placeholder="Food, Pizza, CheeseCurds, Beer"
+    [(ngModel)]="intrests">
+    <button (click)="formSubmitted()">Save</button>
+</div>

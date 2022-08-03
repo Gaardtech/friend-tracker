@@ -1,0 +1,7 @@
+.input-form > input,
+.input-form> textarea,
+.input-form> button {
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    width: 100%;
+}

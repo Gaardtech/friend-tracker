@@ -1,0 +1,11 @@
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 100%;
+    min-height: 240 px;
+    padding: 8px;
+}

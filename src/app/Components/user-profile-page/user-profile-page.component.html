@@ -1,0 +1,10 @@
+<div class="normal-container" *ngIf="!isEditing">
+    <app-profile-info [person]="myProfile"></app-profile-info>   
+    <button (click)="startEditing()">Edit Info</button>
+</div>
+<div *ngIf="isEditing">
+<app-person-info-form
+ [person]="myProfile"
+ (submit)="saveChanges($event)"
+></app-person-info-form>
+</div>

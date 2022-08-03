@@ -1,0 +1,23 @@
+<div class="normal-container">
+  <app-welcome-message
+    (hide)="hideMessage()"
+    [person]="myProfile"
+    [showMessage]="showMessage">
+  </app-welcome-message>
+  </div>
+  <h2>Favorites</h2>
+  <p>You currently have {{ favorites.length }} favorites </p>
+  <app-people-list
+    [people]="favorites"
+    [clickPersonFn]="goToFriendsDetailsPage"
+    [buttonFn]="removeFavorite"
+    actionText = "remove Favorite">
+  </app-people-list>
+    <h2>My Friends</h2>
+  <app-people-list
+    [people]="nonFavorites"
+    [clickPersonFn]="goToFriendsDetailsPage"
+    [buttonFn]="addFavorite"
+    actionText = "add Favorite"
+    [allowAdditions] = "true" >
+  </app-people-list>

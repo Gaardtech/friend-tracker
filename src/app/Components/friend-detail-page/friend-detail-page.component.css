@@ -1,0 +1,10 @@
+.actionButton {
+    margin-top: 16px;
+    width: 100%;
+}
+
+.deleteButton {
+    margin-top: 16px;
+    width: 100%;
+    background-color: red;
+}

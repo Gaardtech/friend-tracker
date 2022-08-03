@@ -1,0 +1,13 @@
+<div class="people-list">
+    <div class="people-list-item" *ngFor="let person of people ">
+      <app-person-card
+         [person]="person"
+         [selectFn]="clickPersonFn"
+         [buttonFn]="buttonFn"
+         [actionText] = "actionText"
+         ></app-person-card>
+    </div>
+    <div class="people-list-item" *ngIf="allowAdditions">
+      <app-new-friend-card (click)="goToNewFriendPage()"></app-new-friend-card>
+    </div>
+</div>

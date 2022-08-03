@@ -1,0 +1,10 @@
+.tag {
+    border: 1px solid #777;
+    background-color: aqua;
+    font-weight: bold;
+    border-radius: 10px;
+    display: inline;
+    padding: 2px;
+    margin: 2px;
+
+}

@@ -1,0 +1,19 @@
+<div class="friendExists" *ngIf="selectedFriend">
+    <app-profile-info
+    *ngIf="selectedFriend"
+    [person] = "selectedFriend">
+    </app-profile-info>
+    <button *ngIf="favoritesIds.includes(selectedFriend.id)" class="actionButton"  (click)="removeFavorite()">Remove from Favorites </button>
+    <button *ngIf="!favoritesIds.includes(selectedFriend.id)" class="actionButton" (click)="addFavorite()">Add to Favorites </button>
+    <button class="actionButton" (click)="goToEditPage()">Edit Info</button>
+    <button class="deleteButton" (click)="deleteFriend()">Delete Friend</button>
+</div>
+
+<div class="friendMissing" *ngIf="!selectedFriend"> 
+       <h1>There is no Friend with this ID... </h1>
+       <p>you will be redirected home soon ..</p>
+</div>
+
+
+
+    

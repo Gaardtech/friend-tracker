@@ -1,0 +1,22 @@
+
+<div class="card" (click)="cardClicked()">
+    <div class="card-container">
+        <div class="profile-pic-left">
+            <div class="profile-pic-wrap">
+                <img class="profile-pic" src="{{person.profilePicURL}}" alt="my sexy ass">
+            </div>
+        </div>
+        <div class="card-details">
+            <h3>Name</h3>
+            <p>{{person.name}}</p>
+            <h3>Age</h3>
+            <p>{{person.age}}</p>
+    
+        </div>
+    </div>
+    <button 
+    *ngIf = "actionText"
+     class="actionButton"
+    (click)="buttonCicked()">{{actionText}}</button>
+</div>
+

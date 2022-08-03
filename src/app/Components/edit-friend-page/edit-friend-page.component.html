@@ -1,0 +1,12 @@
+<h1 *ngIf="selectedFriend">Edit Friend</h1>
+<app-person-info-form
+*ngIf="selectedFriend"
+[person] = "selectedFriend"
+(submit)="updateFriend($event)"
+></app-person-info-form>
+<div class="friendMissing"
+style="text-align: center;"
+*ngIf="!selectedFriend">
+<h1>looks like that friend does not exist....</h1>
+<p>redirecing home</p>
+</div>
